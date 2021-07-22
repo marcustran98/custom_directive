@@ -1,10 +1,11 @@
-import { NgModule } from "@angular/core";
-import { HightLightDirective } from "./directives/isrender.directive";
+import { NgModule } from '@angular/core';
+import { HightLightDirective } from './directives/highlight.directive';
+import { IsShowDirective } from './directives/isshow.directive';
+import { TooltipDirective } from './directives/tooltip.directive';
 
 @NgModule({
-  declarations: [HightLightDirective],
+  declarations: [HightLightDirective, IsShowDirective, TooltipDirective],
   imports: [],
-  exports: [HightLightDirective]
+  exports: [HightLightDirective, IsShowDirective, TooltipDirective],
 })
-
-export class ShareModule { }
+export class ShareModule {}
