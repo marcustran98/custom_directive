@@ -2,13 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { HighlightComponent } from './components/highlight/highlight.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { ShareModule } from './shared/share.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TooltipComponent,
+    HighlightComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]
